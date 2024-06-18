@@ -1,22 +1,17 @@
 import numpy as np
 
-# Helper function to print arrays with two decimals
 def print_array(name, array):
     print(f"{name}:\n {np.array2string(array, formatter={'float_kind':lambda x: '%.2f' % x})}\n")
 
-# Creación de un vector
 vector = np.array([1, 2, 3])
 print_array("Vector", vector)
 
-# Creación de una matriz
 matriz = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 print_array("Matriz", matriz)
 
-# Creación de un array 3D
 array_3d = np.random.rand(2, 3, 4)
 print_array("Array 3D", array_3d)
 
-# Operaciones entre vectores
 vector_a = np.array([1, 2, 3])
 vector_b = np.array([4, 5, 6])
 suma_vectores = vector_a + vector_b
@@ -27,7 +22,6 @@ print_array("Suma de vectores", suma_vectores)
 print_array("Resta de vectores", resta_vectores)
 print("Producto punto de vectores:", f"{producto_punto:.2f}")
 
-# Operaciones entre matrices
 matriz_a = np.random.rand(3, 3)
 matriz_b = np.random.rand(3, 3)
 suma_matrices = matriz_a + matriz_b
@@ -46,7 +40,6 @@ print_array("Producto elemento a elemento de matrices", producto_elemento_a_elem
 print_array("Transpuesta de la matriz A", transpuesta_a)
 print_array("Inversa de la matriz A", inversa_a)
 
-# Operaciones con arrays 3D
 array_3d_a = np.random.rand(2, 3, 4)
 array_3d_b = np.random.rand(2, 3, 4)
 suma_arrays_3d = array_3d_a + array_3d_b
